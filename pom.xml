@@ -9,6 +9,22 @@
     <artifactId>your-artifact-id</artifactId>
     <version>1.0.0</version>
 
-    <!-- Other project configuration goes here -->
+    <!-- Add dependencies, properties, and other configurations as needed -->
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.0</version> <!-- Adjust version as needed -->
+
+                <configuration>
+                    <!-- Optionally configure the war file -->
+                    <warName>your-war-name</warName> <!-- Customize the name of the WAR file -->
+                    <!-- Other configuration options such as filtering, webResources, etc. -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
